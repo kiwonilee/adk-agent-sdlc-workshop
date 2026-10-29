@@ -1,4 +1,4 @@
-# Agents CLI in Agent Platform
+# ADK Agent SDLC Workshop (with Agents CLI)
 
 이 실습 가이드는 **Google Agents CLI (`agents-cli`)**와 **Agent Development Kit (ADK)**를 활용하여 AI 에이전트의 **전체 SDLC (Software Development Lifecycle: 프로젝트 생성 → 개발 및 로컬 검증 → 체계적 품질 평가 → 프로덕션 배포 → 관측성 모니터링 → 장기 기억 고도화 → 엔터프라이즈 게시)**를 엔드투엔드로 경험할 수 있도록 구성되어 있습니다.
 
@@ -44,11 +44,15 @@ flowchart LR
 ---
 
 ## 사전 준비 (Before You Begin)
-### 1. 환경 변수 설정
+### 1. 실습 리포지토리 클론 및 환경 변수 설정
 1. Google Cloud Console 접속
 2. Cloud Shell 접속 (우측 상단)
-3. Shell Editor 에서 다음 커맨드 실행
-`YOUR_PROJECT_ID` 부분을 본인의 GCP 프로젝트 ID로 변경하여 실행합니다.
+3. Shell Editor 터미널에서 본 실습 리포지토리를 클론하고 디렉토리로 이동합니다:
+```bash
+git clone https://github.com/kiwonilee/adk-agent-sdlc-workshop.git
+cd adk-agent-sdlc-workshop
+```
+4. `YOUR_PROJECT_ID` 부분을 본인의 GCP 프로젝트 ID로 변경하여 실행합니다.
 ```bash
 export GOOGLE_CLOUD_PROJECT=[YOUR_PROJECT_ID]
 ```
